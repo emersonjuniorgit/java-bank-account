@@ -77,7 +77,7 @@ public class ContaBancaria {
             System.out.println("Pagamento inválido, pois o saldo atual é insuficiente.");
             return;
         }
-        System.out.printf("O seu boleto foi pago, saldo atual: R$ %.2f%n", this.saldo);
         this.saldo -= valorBoleto;
+        System.out.printf("O seu boleto foi pago, saldo atual: R$ %.2f%n", this.saldo);
     }
 }
